@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#home, #portfolio, #service, #contact{
+    transition: all 0.5s;
+}
+/* 
+header{
+    background:radial-gradient(rgb(2, 142, 185),rgb(32, 106, 129));
+} */
+
+
+.wrapper{
+   
+    background: url("img/food-bg-2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 90vh;
+}
+header{
+    background: rgba(10, 9, 9, 0.534);
+    max-width: 100%;
+    min-height: 90vh;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.col-2{
+    flex-basis: 50%;
+    color: aliceblue;
+    
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding:0 25px;
+   
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo h5, i{
+    display: inline-block;
+    font-size: 20px;
+    color:rgb(208, 255, 0);
+}
+
+nav{
+    text-align: right;
+    flex: 1;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+    transition:ease-in 0.5s
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 251, 250);
+    
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(184, 115, 4);
+   
+   
+}
+.menu{
+    display: none;
+    margin-left: 20px;
+    width: 25px;
+}
+
+.cart{
+    width: 25px;
+    display: inline-block;
+}
+.active{
+    border-bottom: 2px solid rgb(184, 115, 4);
+   
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+/* showcase */
+ .showcase{
+     color: white;
+     text-align: center;
+     margin: 100px 0;
+ }
+.showcase small{
+    display: block;
+}
+ .showcase button{
+     padding: 5px 20px;
+     background:radial-gradient(rgb(187, 45, 1),rgb(221, 70, 10));
+     color: white;
+     margin: 25px;
+     outline: none;
+     border: none;
+     border-radius: 20px;
+ }
+ .showcase button:hover{
+    background: rgb(219, 83, 19);
+    cursor: pointer;
+ }
+
+
+/* ========= introduce ========= */
+.introduce{
+    background: rgb(224, 223, 223);
+    color:#000;
+}
+
+.introduce .container{
+    max-width: 1070px;
+    padding-top:120px;
+    padding-bottom:80px ;
+}
+.introduce .row{
+    display: flex;
+}
+.introduce .col-2{
+    flex-basis: 50%;
+}
+.introduce .right-col{
+    margin-top: 0px;
+    color: black;
+}
+.introduce .right-col h5{
+    line-height: 2rem;
+    color: rgb(218, 95, 24);
+    font-size: 1.2rem;
+    /* padding-bottom: 10px; */
+}
+.introduce .right-col p{
+    line-height: 1.5rem;
+}
+
+.today{
+    background: rgb(236, 235, 235);
+ 
+    
+}
+
+.today .container{
+    max-width: 1070px;
+    margin:auto;
+    padding-top:120px;
+    padding-bottom:50px ;
+    text-align: center;
+    
+   
+}
+
+.today .container i{
+    color: coral;
+    font-size: 12px;
+}
+.today .container .row{
+    display: flex;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+}
+
+.today .container .col-4{
+    width: 200px;
+    flex-basis: 20%;
+    padding: 0 10px;
+    transition: .5s;
+
+   
+}
+
+.col-4 .image{
+    position: absolute;
+    padding:10px 20px;
+    width: 230px;
+    height: 230px;
+    background: rgba(0, 0, 0, 0.459);
+    visibility: hidden;
+    translate: (-50% 12%);
+   
+} 
+.today .container .col-4:hover {
+    transform: translateY(-9px);
+    cursor: pointer;
+   
+    
+} 
+.today .container .col-4 span{
+    color: rgb(216, 2, 2);
+}
+.today .container .col-4 img{
+    width: 100%;
+}
+
+.fixed-bg{
+    background-attachment: fixed;
+    background-image: url("img/main-2-bg.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+  
+}
+
+ /*  menu */
+ .rest-menu{
+    
+    margin:-100px auto ;
+    margin-bottom: 100px;
+    text-align: center;
+ }
+ .rest-menu a{
+     display: inline-block;
+     margin-top: 5px;
+     color: white;
+     background: rgb(4, 209, 15);
+     padding: 5px 10px;
+     border-radius: 20px;
+     font-size: 12px;
+     
+ }
+ .rest-menu a:hover{
+     cursor: pointer;
+     background: rgb(2, 158, 10);
+ }
+
+ .rest-menu .container{
+   
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid rgb(185, 185, 185);
+    border-radius: 6px;
+    background:radial-gradient(rgb(240, 239, 237), rgb(248, 248, 230)) ;
+
+    /* background:url("img/menu-bg.jpg") no-repeat center;
+    background-size: cover; */
+  
+     
+       
+ }
+ .rest-menu .container p{
+     text-align: center;
+     padding: 30px 0;
+ }
+
+ .rest-menu .row{
+     display: flex;
+     max-width: 900px;
+     margin: 0 60px;
+ }
+
+ .rest-menu .col-5{
+     flex-basis: 50%;
+ }
+ .rest-menu .row-1{
+     border-bottom: 1px solid #000;
+ }
+
+ .rest-menu .col-5 img{
+    width: 100px;
+    display: inline-block;
+    border-radius: 50%;
+ }
+
+ .rest-menu .col-5 p{
+    display: inline-block;
+ }
+ .rest-menu .menu-btn{
+     text-align: center;
+ }
+
+.col-5 a{
+    display: inline-block;
+    margin: 0px 10px;
+    background: rgb(235, 128, 7);
+    padding: 2px 5px;
+    cursor: pointer ;
+    font-size: 10px;
+    color: rgb(17, 17, 17);
+    border-radius: 10px;
+}
+.col-5 a:hover{
+    background: rgb(197, 106, 1);
+}
+
+
+
+/* #######  Discount Set ######## */
+.discount{
+    height: 400px;
+    background: url("img/food-bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.discount .row{
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.discount .col-2{
+    padding: 100px 0;
+    flex-basis: 100%;
+}
+.discount .col-2 h1{
+    color: rgb(235, 40, 5);
+    font-size: 3rem;
+}
+.discount .col-2 h3{
+    font-size: 2rem;
+}
+.discount .col-2 a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: rgb(250, 39, 2);
+    font-size: 1rem;
+    color: white;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.discount .col-2 a:hover{
+    transform: scale(1.1, 1.1);
+}
+
+
+/* ######3  Testimonials ####### */
+#testi{
+
+    width: 100%;
+    margin:auto;
+}
+
+#testi h3{
+    margin: 50px 0;
+    text-align: center;
+}
+.testi-sect{
+    display: flex;
+    padding: 0 10px;
+}
+#testi .item{
+    border: 1px solid rgb(253, 229, 15);
+    
+  
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    text-align: center;
+}
+#testi .item .col-5{
+    flex-basis: 30%;
+}
+#testi .item img{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 9px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer{
+    background: rgb(2, 12, 9);
+    color: white;
+    
+}
+footer .container{
+    padding: 10px 10px;
+    margin: auto;
+}
+footer .container .row{
+ 
+    padding:30px 10px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+footer .row .col-3{
+    flex-basis: 20%;
+    padding:0 10px;
+}
+footer a{
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding: 30px 0;
+}
+footer h4{
+    line-height: 50px;
+}
+form {
+
+}
+
+form input{
+    display: inline-block;
+    width: 200px;
+    padding: 3px 10px;
+}
+footer button{
+    color: white;
+    background: rgb(240, 39, 4);
+    outline: none;
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*   media queries */
+
+@media only screen and (max-width: 700px){
+   
+  
+    header{
+        background: rgba(10, 9, 9, 0.534);
+        max-width: 100%;
+        min-height: 50vh;
+    }
+    
+    .wrapper{
+   
+        background: url("img/food-bg-2.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 50px;
+        right: 0;
+      
+        margin-right: 0px;
+        background: rgba(196, 93, 33, 0.692);
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+   
+        overflow: hidden;
+        transition: max-height 0.7s;
+        
+    }
+    nav ul li{
+      display: block;
+      color: white;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-top: 1px;
+      padding:5px 0;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu{
+        cursor: pointer;
+        display: block;
+        background: rgb(245, 154, 49);
+        padding: 2px;
+        border-radius: 3px;
+    }
+    .row{
+        
+       
+        margin-top: 50px;
+        
+    }
+    .showcase{
+       
+        margin: 70px 0;
+    }
+    .introduce  .row {
+        text-align: center;
+    }
+    .introduce img{
+        width: 200px;
+    }
+  
+    .introduce .col-2{
+        flex-basis: 100%;
+    }
+    .introduce .col-2 .right-col{
+        flex-basis: 100%;
+    }
+
+    
+    .today .container .col-4{
+    width: 200px;
+    flex-basis: 100%;
+    padding: 0 10px;
+    transition: .5s;
+    margin: 20px auto;
+
+   
+    }
+  
+    .fixed-bg{
+        width: 100%;
+       
+    }
+
+    .rest-menu .row{
+        margin: 0 auto;
+    }
+   
+    .rest-menu .col-5{
+        flex-basis:50%;
+    }
+
+    .rest-menu .col-5 a{
+        color: rgb(251, 249, 249);
+    }
+
+    .discount{
+        width: 100%;
+        height: 400px;
+        background: url("img/food-bg.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    footer .container .row .col-3{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .form{
+        margin-bottom:10px;
+    }
+    form input{
+ 
+        display: inline-block;
+        width:150px;
+        padding: 3px 10px;
+    }
+
+    footer p{
+        padding:20px 10px;
+    }
+ 
+
+
+}
